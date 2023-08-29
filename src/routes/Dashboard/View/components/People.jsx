@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom'
 
 const people = [
   {
-    img: '../../../../../public/hero.jpg'
+    img: '../../../../../../public/hero.jpg'
   },
   {
-    img: '../../../../../public/hero.jpg'
+    img: '../../../../../../public/hero.jpg'
   },
   {
-    img: '../../../../../public/hero.jpg'
+    img: '../../../../../../public/hero.jpg'
   },
   {
-    img: '../../../../../public/hero.jpg'
+    img: '../../../../../../public/hero.jpg'
   },
   {
-    img: '../../../../../public/hero.jpg'
+    img: '../../../../../../public/hero.jpg'
   },
 ]
 
