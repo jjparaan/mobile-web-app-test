@@ -1,8 +1,8 @@
 import React from "react";
-import "./FrontPage.scss";
+import "./Landing.scss";
 import { Link } from "react-router-dom";
 
-const FrontPage = () => {
+const Landing = () => {
   return (
     <main className="front-page">
       <div className="fp-top">
@@ -58,4 +58,4 @@ const FrontPage = () => {
   );
 };
 
-export default FrontPage;
+export default Landing;

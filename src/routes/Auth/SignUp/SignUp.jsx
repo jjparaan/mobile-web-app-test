@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './SignUp.scss'
-import Navbar from '../../components/Navbar'
+import GlobalNavbar from '../../components/GlobalNavbar'
 import TextField from '@mui/material/TextField';
 import { Link } from 'react-router-dom';
 import { Autocomplete } from '@mui/material';
@@ -62,7 +62,7 @@ const SignUp = () => {
 
   return (
     <main className='sign-up'>
-      <Navbar children={localState.signIn} />
+      <GlobalNavbar children={localState.signIn} />
       <section className="su-content">
         <h1>Create a <span>new account</span></h1>
         <div className="form">

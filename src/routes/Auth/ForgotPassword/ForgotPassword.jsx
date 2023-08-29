@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './ForgotPassword.scss'
-import Navbar from '../../components/Navbar'
+import GlobalNavbar from '../../components/GlobalNavbar'
 import TextField from '@mui/material/TextField';
 import GlobalButton from '../../components/GlobalButton';
 
@@ -39,7 +39,7 @@ const ForgotPassword = () => {
 
   return (
     <main className='forgot-password'>
-      <Navbar children={localState.signIn} />
+      <GlobalNavbar children={localState.signIn} />
       <section className="fp-content">
         <h1>Forget your <span>password?</span></h1>
         <p>Provide your valid email address to change password</p>

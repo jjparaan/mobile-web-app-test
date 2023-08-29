@@ -1,8 +1,8 @@
 import React from 'react'
-import './Navbar.scss'
+import './GlobalNavbar.scss'
 import { Link, } from 'react-router-dom'
 
-const Navbar = ({ children }) => {
+const GlobalNavbar = ({ children }) => {
   return (
     <section className='nav-container'>
       <nav>
@@ -17,4 +17,4 @@ const Navbar = ({ children }) => {
   )
 }
 
-export default Navbar
+export default GlobalNavbar
