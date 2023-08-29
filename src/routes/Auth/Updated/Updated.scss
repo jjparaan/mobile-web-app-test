@@ -1,0 +1,42 @@
+:root {
+    --text-color: #000000;
+    --bg-color: #FFFFFF;
+    --primary-color: #8FB3FF;
+    --secondary-color: #EBF1FF;
+    --accent-color: #D41D6D;
+    --dm-text-color: #FFFFFF;
+    --dm-bg-color: #000000;
+    --dm-primary-color: #8FB3FF;
+    --dm-secondary-color: #001952;
+    --dm-accent-color: #F199BF;
+    }
+
+.updated {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .up-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            
+            span {
+                font-weight: 500;
+            }
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    }
+}
