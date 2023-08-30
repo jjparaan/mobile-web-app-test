@@ -9,12 +9,12 @@ const news = [
   },
   {
     img: '../../../../public/news.jpg',
-    name: 'Do share and Earn a lot',
+    name: 'Walmart news latest picks',
     description: 'Get $10 instant as reward while your friend or invited member join firm wall app.'
   },
   {
     img: '../../../../public/news.jpg',
-    name: 'Do share and Earn a lot',
+    name: 'Do share and Help us',
     description: 'Get $10 instant as reward while your friend or invited member join firm wall app.'
   },
 ]

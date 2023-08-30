@@ -2,7 +2,7 @@
     --text-color: #000000;
     --bg-color: #FFFFFF;
     --primary-color: #8FB3FF;
-    --secondary-color: #EBF1FF;
+    --secondary-color: #698ad1;
     --accent-color: #D41D6D;
     --dm-text-color: #FFFFFF;
     --dm-bg-color: #000000;
@@ -84,6 +84,8 @@
                 flex: 1;
                 height: 75px;
                 width: 100px;
+                background-color: var(--secondary-color);
+                color: var(--dm-text-color);
                 border-radius: 20px;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
                 padding: 20px;
@@ -305,7 +307,7 @@
             flex-direction: column;
             text-align: center;
             gap: 10px;
-            background-color: var(--text-color);
+            background-color: var(--secondary-color);
             color: var(--dm-text-color);
             border-radius: 20px;
 
@@ -318,6 +320,8 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    font-weight: 700;
+                    letter-spacing: 2px;
                     // font-size: 12px;
                 }
             }
@@ -349,7 +353,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        border: 1px solid #c5c2c2;
         border-radius: 20px;
         padding: 15px 20px;
 
@@ -424,7 +428,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+                border: 1px solid #c5c2c2;
                 border-radius: 20px;
                 padding: 20px;
 
@@ -438,12 +442,15 @@
                     .img-container {
                         height: 50px;
                         width: 50px;
+                        border: 1px solid #c5c2c2;
                         border-radius: 8px;
+                        padding: 2px;
                         overflow: hidden;
                         
                         img {
                             height: 100%;
                             width: 100%;
+                            border-radius: 8px;
                         }
                     }
 
@@ -511,7 +518,7 @@
             .article {
                 display: flex;
                 align-items: center;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+                border: 1px solid #c5c2c2;
                 border-radius: 20px;
                 padding: 20px;
                 gap: 10px;
@@ -519,12 +526,15 @@
                 .img-container {
                     height: 50px;
                     width: 50px;
+                    border: 1px solid #c5c2c2;
                     border-radius: 8px;
+                    padding: 2px;
                     overflow: hidden;
                     
                     img {
                         height: 100%;
                         width: 100%;
+                        border-radius: 8px;
                     }
                 }
                 
@@ -590,4 +600,15 @@
             }
         }
     }
+    
+    .dark {
+        background-color: var(--dm-bg-color);
+        color: var(--dm-text-color);
+    }
+
+}
+
+.dark {
+    background-color: var(--dm-bg-color);
+    color: var(--dm-text-color);
 }

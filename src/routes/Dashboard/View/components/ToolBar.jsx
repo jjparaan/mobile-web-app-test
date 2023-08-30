@@ -33,7 +33,7 @@ const tabs = [
   },
 ]
 
-const ToolBar = () => {
+const ToolBar = ({ darkModeValue }) => {
   const tab = tabs.map((tab, index) => (
     <div className={tab.className} key={index}>
       {tab.icon}
@@ -42,7 +42,7 @@ const ToolBar = () => {
   ));
 
   return (
-    <section className='toolBar'>
+    <section className={!darkModeValue ? 'toolBar' : 'toolBar dark'}>
       {tab}
     </section>
   )

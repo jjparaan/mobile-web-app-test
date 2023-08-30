@@ -13,7 +13,7 @@ const items = [
         padding: '4px',
       }}
     />,
-    name: "Dummy",
+    name: "Pay",
   },
   {
     icon: <CreditCardIcon
@@ -26,7 +26,7 @@ const items = [
         padding: '4px',
       }}
     />,
-    name: "Dummy",
+    name: "Send",
   },
   {
     icon: <CreditCardIcon
@@ -39,7 +39,7 @@ const items = [
         padding: '4px',
       }}
     />,
-    name: "Dummy",
+    name: "Receive",
   },
   {
     icon: <CreditCardIcon
@@ -52,7 +52,7 @@ const items = [
         padding: '4px',
       }}
     />,
-    name: "Dummy",
+    name: "Withdraw",
   },
   {
     icon: <CreditCardIcon
@@ -65,7 +65,7 @@ const items = [
         padding: '4px',
       }}
     />,
-    name: "Dummy",
+    name: "TV",
   },
   {
     icon: <CreditCardIcon
@@ -78,7 +78,7 @@ const items = [
         padding: '4px',
       }}
     />,
-    name: "Dummy",
+    name: "Add Money",
   },
   {
     icon: <CreditCardIcon
@@ -91,7 +91,7 @@ const items = [
         padding: '4px',
       }}
     />,
-    name: "Dummy",
+    name: "Buy",
   },
   {
     icon: <CreditCardIcon
@@ -104,7 +104,7 @@ const items = [
         padding: '4px',
       }}
     />,
-    name: "Dummy",
+    name: "Cashback",
   },
 ]
 

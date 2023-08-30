@@ -9,23 +9,26 @@ import Ads from './components/Ads'
 import Transactions from './components/Transactions'
 import News from './components/News'
 import ToolBar from './components/ToolBar'
-import './View.scss'
 import DarkMode from './components/DarkMode'
+import './View.scss'
+import { useSelector } from 'react-redux'
 
 const View = () => {
+  const darkModeValue = useSelector((state) => state.darkMode.value)
+
   return (
-    <div className='view'>
-        <NavBar />
-        <Stats />
-        <Features />
-        <People />
-        <Companies />
-        <Cards />
-        <DarkMode />
-        <Ads />
-        <Transactions />
-        <News />
-        <ToolBar />
+    <div className={!darkModeValue ? 'view' : 'view dark'}>
+      <NavBar darkModeValue={darkModeValue}/>
+      <Stats />
+      <Features />
+      <People />
+      <Companies />
+      <Cards />
+      <DarkMode />
+      <Ads />
+      <Transactions />
+      <News />
+      <ToolBar darkModeValue={darkModeValue}/>
     </div>
   )
 }

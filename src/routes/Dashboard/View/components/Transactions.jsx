@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const transactions = [
   {
     img: '../../../../public/travel-logo.jpg',
-    type: 'Travel',
-    name: 'Uber',
+    type: 'Food',
+    name: 'Zomato',
     date: '15-10-2021 | 10:20am',
     value: '-25.00'
   },
@@ -14,21 +14,21 @@ const transactions = [
     type: 'Travel',
     name: 'Uber',
     date: '15-10-2021 | 10:20am',
-    value: '-25.00'
+    value: '-26.00'
   },
   {
     img: '../../../../public/travel-logo.jpg',
-    type: 'Travel',
-    name: 'Uber',
+    type: 'Food',
+    name: 'Starbucks',
     date: '15-10-2021 | 10:20am',
-    value: '-25.00'
+    value: '-18.00'
   },
   {
     img: '../../../../public/travel-logo.jpg',
-    type: 'Travel',
-    name: 'Uber',
+    type: 'Clothing',
+    name: 'walmart',
     date: '15-10-2021 | 10:20am',
-    value: '-25.00'
+    value: '-105.00'
   },
 ]
 

@@ -10,12 +10,12 @@ const filters = [
   },
   {
     icon: <ShowChartIcon />,
-    name: 'Dummy',
+    name: 'Electronics',
     className: 'filter'
   },
   {
     icon: <ShowChartIcon />,
-    name: 'Dummy',
+    name: 'Transportation',
     className: 'filter'
   },
   {
