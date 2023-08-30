@@ -1,7 +1,7 @@
 import React from 'react'
 import HomeIcon from '@mui/icons-material/Home';
 import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
-import DashboardIcon from '@mui/icons-material/Dashboard';
+import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import WalletIcon from '@mui/icons-material/Wallet';
 
@@ -17,7 +17,7 @@ const tabs = [
     className: 'tab',
   },
   {
-    icon: <DashboardIcon />,
+    icon: <GridViewOutlinedIcon />,
     name: '',
     className: 'centerTab',
   },

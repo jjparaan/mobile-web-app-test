@@ -12,13 +12,16 @@ import ToolBar from './components/ToolBar'
 import DarkMode from './components/DarkMode'
 import './View.scss'
 import { useSelector } from 'react-redux'
+import SideBar from './components/SideBar'
 
 const View = () => {
   const darkModeValue = useSelector((state) => state.darkMode.value)
+  const hamburgerValue = useSelector((state) => state.hamburger.value)
+  const classValue = useSelector((state) => state.hamburger.classValue)
 
   return (
     <div className={!darkModeValue ? 'view' : 'view dark'}>
-      <NavBar darkModeValue={darkModeValue}/>
+      <NavBar darkModeValue={darkModeValue} hamburgerValue={hamburgerValue}/>
       <Stats />
       <Features />
       <People />
@@ -29,6 +32,7 @@ const View = () => {
       <Transactions />
       <News />
       <ToolBar darkModeValue={darkModeValue}/>
+      {hamburgerValue && <SideBar classValue={classValue}/>}
     </div>
   )
 }
