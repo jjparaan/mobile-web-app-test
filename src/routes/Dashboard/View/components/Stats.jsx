@@ -4,12 +4,12 @@ import NorthEastIcon from '@mui/icons-material/NorthEast';
 
 const cards = [
   {
-    icon: <SouthWestIcon style={{ borderRadius: '8px', border:'none', backgroundColor: '#98ED81', fontSize: '34px', color:'white', padding: '4px'}}/>,
+    icon: <SouthWestIcon style={{ borderRadius: '8px', border:'none', backgroundColor: '#00dfa3', fontSize: '34px', color:'white', padding: '4px'}}/>,
     name: "Income",
     value: "1542k"
   },
   {
-    icon: <NorthEastIcon style={{ borderRadius: '8px', border:'none', backgroundColor: '#D41D6D', fontSize: '34px', color:'white', padding: '4px'}}/>,
+    icon: <NorthEastIcon style={{ borderRadius: '8px', border:'none', backgroundColor: '#f73563', fontSize: '34px', color:'white', padding: '4px'}}/>,
     name: "Expense",
     value: "1212k"
   },

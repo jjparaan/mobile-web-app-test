@@ -1,8 +1,7 @@
 import React from 'react'
 import View from './View/View'
 
-const Dashboard = () => {
-
+const Statistics = () => {
   return (
     <>
         <View />
@@ -10,4 +9,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Statistics

@@ -1,0 +1,105 @@
+:root {
+    --text-color: #000000;
+    --bg-color: #FFFFFF;
+    --primary-color: #8FB3FF;
+    --secondary-color: #95aee4;
+    --accent-color: #D41D6D;
+    --dm-text-color: #FFFFFF;
+    --dm-bg-color: #000000;
+    --dm-primary-color: #8FB3FF;
+    --dm-secondary-color: #001952;
+    --dm-accent-color: #F199BF;
+    --bootstrap-bg-color: #732ffa;
+}
+
+.sidebar {
+    .shadow {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        background-color: #e0ccf7a9;
+        z-index: 2;
+    }
+
+    .content {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 96.5vh;
+        width: 75%;
+        margin: 15px;
+        padding: 20px;
+        background-color: var(--bootstrap-bg-color);
+        color: var(--dm-text-color);
+        border-radius: 20px;
+        z-index: 3;
+
+        .user {
+            height: 25%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .left {
+                height: 90px;
+                width: 90px;
+                padding: 4px;
+                background-color: var(--dm-text-color);
+                border-radius: 20px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .bottom {
+                    p {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: 1px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .item {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .active {
+                background-color: #e0ccf744;
+                border-radius: 20px;
+            }
+        }
+    }
+}

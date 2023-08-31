@@ -1,0 +1,306 @@
+:root {
+    --text-color: #000000;
+    --bg-color: #FFFFFF;
+    --primary-color: #8FB3FF;
+    --secondary-color: #95aee4;
+    --accent-color: #D41D6D;
+    --dm-text-color: #FFFFFF;
+    --dm-bg-color: #000000;
+    --dm-primary-color: #8FB3FF;
+    --dm-secondary-color: #001952;
+    --dm-accent-color: #F199BF;
+    --bootstrap-bg-color: #732ffa;
+}
+
+.statisticsView {
+    padding: 20px;
+
+    .chart {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                h3 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .right {
+                display: flex;
+
+                button {
+                    border: none;
+                    all: unset;
+                    display: flex;
+
+                    span {
+                        all: unset;
+                    }
+                }
+            }
+        }
+
+        .chartContainer {
+
+            .recharts-default-legend {
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+
+
+    }
+
+    .stats {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .card {
+            flex: 0 0 47%;
+            max-width: 47%;
+            height: 75px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #c5c2c2;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            padding: 20px;
+            overflow: hidden;
+
+            .top {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .left {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .right {
+                    display: flex;
+                    flex-direction: column;
+
+                    .name {
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+
+                    .value {
+                        font-size: 16px;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .credits {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .heading {
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                font-size: 14px;
+            }
+
+            a {
+                font-size: 14px;
+                color: var(--primary-color);
+                text-decoration: none;
+            }
+        }
+
+        .creditContainer {
+            display: flex;
+            gap: 20px;
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .credit {
+                    width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 20px;
+                    border-radius: 20px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+                    color: var(--dm-text-color);
+
+                    .top {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .right {
+                            text-align: right;
+                            letter-spacing: 1px;
+                            line-height: 1.5;
+                            .bank {
+                                font-size: 12px;
+                            }
+                            
+                            .type {
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+
+                    .center {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .left {
+                            p {
+                                font-size: 18px;
+                                font-weight: 500;
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .left {
+                            text-align: right;
+                            letter-spacing: 1px;
+                            line-height: 1.5;
+
+                            .expiry {
+                                font-size: 12px;
+                            }
+                            
+                            .expiryDate {
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .right {
+                            text-align: right;
+                            letter-spacing: 1px;
+                            line-height: 1.5;
+                            
+                            .class {
+                                font-size: 12px;
+                            }
+                            
+                            .name {
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+
+                .creditTransaction {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .left {
+                        letter-spacing: 1px;
+                        line-height: 1.5;
+
+                        .expense {
+                            font-size: 12px;
+                        }
+                        
+                        .expenseValue {
+                            font-size: 14px;
+                            font-weight: 700;
+
+                            .up {
+                                font-size: 12px;
+                                color: #00dfa3;
+                            }
+
+                            .down {
+                                font-size: 12px;
+                                color: #f73563;
+                            }
+                        }
+                    }
+
+                    .right {
+                        text-align: right;
+                        letter-spacing: 1px;
+                        line-height: 1.5;
+                        
+                        .limit {
+                            font-size: 12px;
+                        }
+                        
+                        .limitValue {
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .payments {
+        margin-top: 20px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .dark {
+        background-color: var(--dm-bg-color);
+        color: var(--dm-text-color);
+
+        .tab {
+            color: var(--dm-text-color);
+        }
+
+    }
+}
+
+.dark {
+    background-color: var(--dm-bg-color);
+    color: var(--dm-text-color);
+}

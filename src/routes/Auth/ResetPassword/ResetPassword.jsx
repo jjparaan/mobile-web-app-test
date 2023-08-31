@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './ResetPassword.scss'
-import GlobalNavbar from '../../components/GlobalNavbar'
+import AuthGlobalNavbar from '../../components/AuthGlobalNavbar'
 import TextField from '@mui/material/TextField';
 import { Link } from 'react-router-dom';
 import GlobalButton from '../../components/GlobalButton';
@@ -40,7 +40,7 @@ const ResetPassword = () => {
     }
     return (
         <main className='reset-password'>
-            <GlobalNavbar children={localState.signIn} />
+            <AuthGlobalNavbar children={localState.signIn} />
             <section className="rp-content">
                 <h1>Change your <span>password</span></h1>
                 <div className="form">

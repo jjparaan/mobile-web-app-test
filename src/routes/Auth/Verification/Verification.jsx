@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Verification.scss'
-import GlobalNavbar from '../../components/GlobalNavbar'
+import AuthGlobalNavbar from '../../components/AuthGlobalNavbar'
 import GlobalButton from '../../components/GlobalButton';
 import TextField from '@mui/material/TextField';
 import { Link } from 'react-router-dom';
@@ -41,7 +41,7 @@ const Verification = () => {
 
     return (
         <main className='verification'>
-            <GlobalNavbar children={localState.signIn} />
+            <AuthGlobalNavbar children={localState.signIn} />
             <section className="v-content">
                 <h1>Verify your <span>Email address</span></h1>
                 <p>Please check your email and look for the OTP verification code.</p>

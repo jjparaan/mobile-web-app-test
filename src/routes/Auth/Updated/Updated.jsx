@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Updated.scss'
-import GlobalNavbar from '../../components/GlobalNavbar'
+import AuthGlobalNavbar from '../../components/AuthGlobalNavbar'
 import { Link } from 'react-router-dom'
 import GlobalButton from '../../components/GlobalButton'
 
@@ -14,7 +14,7 @@ const Updated = () => {
     })
     return (
         <main className='updated'>
-            <GlobalNavbar />
+            <AuthGlobalNavbar />
             <section className="up-content">
                 <svg
                     id="sw-js-blob-svg"

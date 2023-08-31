@@ -4,41 +4,47 @@ import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import WalletIcon from '@mui/icons-material/Wallet';
+import { Link } from 'react-router-dom';
+import './GlobalToolbar.scss'
 
 const tabs = [
   {
     icon: <HomeIcon />,
     name: 'Home',
-    className: 'tab',
+    className: 'tab home',
+    to: '/dashboard'
   },
   {
     icon: <SignalCellularAltIcon />,
     name: 'Statistics',
-    className: 'tab',
+    className: 'tab statistics',
+    to: '/statistics'
   },
   {
     icon: <GridViewOutlinedIcon />,
     name: '',
-    className: 'centerTab',
+    className: 'center',
   },
   {
     icon: <ShoppingBagIcon />,
     name: 'Shop',
-    className: 'tab',
+    className: 'tab shop',
+    to: '/dashboard'
   },
   {
     icon: <WalletIcon />,
     name: 'Wallet',
-    className: 'tab',
+    className: 'tab wallet',
+    to: '/dashboard'
   },
 ]
 
-const ToolBar = ({ darkModeValue }) => {
+const GlobalToolbar = ({ darkModeValue }) => {
   const tab = tabs.map((tab, index) => (
-    <div className={tab.className} key={index}>
+    <Link to={tab.to} className={tab.className} key={index}>
       {tab.icon}
       <p>{tab.name}</p>
-    </div>
+    </Link>
   ));
 
   return (
@@ -48,4 +54,4 @@ const ToolBar = ({ darkModeValue }) => {
   )
 }
 
-export default ToolBar
+export default GlobalToolbar

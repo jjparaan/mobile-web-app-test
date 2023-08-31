@@ -15,6 +15,7 @@ import ResetPassword from './routes/Auth/ResetPassword/ResetPassword'
 import Updated from './routes/Auth/Updated/Updated'
 import Verification from './routes/Auth/Verification/Verification'
 import Dashboard from './routes/Dashboard/Dashboard'
+import Statistics from './routes/Statistics/Statistics'
 
 const App = () => {
 
@@ -78,6 +79,17 @@ const App = () => {
             {
                 path: '/news',
                 element: <div>News Page</div>,
+                errorElement: <ErrorPage />
+            },
+            // Statistics Page
+            {
+                path: '/statistics',
+                element: <Statistics />,
+                errorElement: <ErrorPage />
+            },
+            {
+                path: '/credits',
+                element: <div>Credits Page</div>,
                 errorElement: <ErrorPage />
             },
         ]

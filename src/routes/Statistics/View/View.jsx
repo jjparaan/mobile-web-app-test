@@ -1,36 +1,28 @@
 import React from 'react'
 import GlobalNavbar from '../../components/GlobalNavbar'
-import GlobalToolbar from '../../components/GlobalToolbar'
 import GlobalSidebar from '../../components/GlobalSidebar'
+import GlobalToolbar from '../../components/GlobalToolbar'
+import Chart from './components/Chart'
 import Stats from './components/Stats'
-import Features from './components/Features'
-import People from './components/People'
-import Companies from './components/Companies'
-import Cards from './components/Cards'
-import Ads from './components/Ads'
-import Transactions from './components/Transactions'
-import News from './components/News'
-import DarkMode from './components/DarkMode'
-import './View.scss'
 import { useSelector } from 'react-redux'
+import './View.scss'
+import Credits from './components/Credits'
+import Payments from './components/Payments'
 
 const View = () => {
   const darkModeValue = useSelector((state) => state.darkMode.value)
   const hamburgerValue = useSelector((state) => state.hamburger.value)
   const classValue = useSelector((state) => state.hamburger.classValue)
-
+  
   return (
-    <div className={!darkModeValue ? 'dbView' : 'dbView dark'}>
+    <div className={!darkModeValue ? 'statisticsView' : 'statisticsView dark'}>
       <GlobalNavbar darkModeValue={darkModeValue} hamburgerValue={hamburgerValue}/>
+      <Chart />
       <Stats />
-      <Features />
-      <People />
-      <Companies />
-      <Cards />
-      <DarkMode />
-      <Ads />
-      <Transactions />
-      <News />
+      <Credits />
+      <Payments />
+
+      
       <GlobalToolbar darkModeValue={darkModeValue}/>
       {hamburgerValue && <GlobalSidebar classValue={classValue}/>}
     </div>

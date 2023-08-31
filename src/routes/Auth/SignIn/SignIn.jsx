@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SignIn.scss";
-import GlobalNavbar from "../../components/GlobalNavbar";
+import AuthGlobalNavbar from "../../components/AuthGlobalNavbar";
 import GlobalButton from "../../components/GlobalButton";
 import TextField from "@mui/material/TextField";
 import { Link } from "react-router-dom";
@@ -37,7 +37,7 @@ const SignIn = () => {
 
   return (
     <main className="sign-in">
-      <GlobalNavbar children={localState.signUp} />
+      <AuthGlobalNavbar children={localState.signUp} />
       <section className="si-content">
         <h1>
           Sign in to <span>your account</span>

@@ -10,7 +10,8 @@ import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import { useDispatch } from 'react-redux';
-import { doToggleHamburgerBtn, doToggleClassValue } from '../../../../redux/features/hamburger/hamburgerSlice';
+import { doToggleHamburgerBtn, doToggleClassValue } from '../../redux/features/hamburger/hamburgerSlice';
+import './GlobalSidebar.scss'
 
 const user = [
     {
@@ -56,7 +57,7 @@ const menuItems = [
     },
 ]
 
-const SideBar = ({ classValue }) => {
+const GlobalSidebar = ({ classValue }) => {
     const dispatch = useDispatch();
 
     const [menuItemActiveStates, setMenuItemActiveStates] = useState(
@@ -120,4 +121,4 @@ const SideBar = ({ classValue }) => {
     )
 }
 
-export default SideBar
+export default GlobalSidebar

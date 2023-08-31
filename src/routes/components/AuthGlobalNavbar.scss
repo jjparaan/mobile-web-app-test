@@ -1,0 +1,48 @@
+:root {
+    --text-color: #000000;
+    --bg-color: #FFFFFF;
+    --primary-color: #8FB3FF;
+    --secondary-color: #EBF1FF;
+    --accent-color: #D41D6D;
+    --dm-text-color: #FFFFFF;
+    --dm-bg-color: #000000;
+    --dm-primary-color: #8FB3FF;
+    --dm-secondary-color: #001952;
+    --dm-accent-color: #F199BF;
+}
+
+.nav-container {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+        }
+
+        ul {
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}

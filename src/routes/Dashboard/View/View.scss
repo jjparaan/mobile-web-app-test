@@ -2,7 +2,7 @@
     --text-color: #000000;
     --bg-color: #FFFFFF;
     --primary-color: #8FB3FF;
-    --secondary-color: #698ad1;
+    --secondary-color: #95aee4;
     --accent-color: #D41D6D;
     --dm-text-color: #FFFFFF;
     --dm-bg-color: #000000;
@@ -12,49 +12,8 @@
     --bootstrap-bg-color: #732ffa;
 }
 
-.view {
+.dbView {
     padding: 20px;
-
-    .navbar {
-        height: 70px;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-        background-color: var(--bg-color);
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-        z-index: 1;
-
-        svg {
-            &:hover {
-                cursor: pointer;
-            }
-        }
-
-        .logo {
-            width: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                height: 50px;
-            }
-
-            h1 {
-                font-size: 14px;
-                font-weight: 300;
-
-                span {
-                    font-weight: 500;
-                }
-            }
-        }
-    }
 
     .stats {
         margin-top: 80px;
@@ -81,11 +40,10 @@
             gap: 20px;
 
             .card {
-                flex: 1;
+                flex: 0 0 47%;
+                max-width: 47%;
                 height: 75px;
-                width: 100px;
-                background-color: var(--secondary-color);
-                color: var(--dm-text-color);
+                border: 1px solid #c5c2c2;
                 border-radius: 20px;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
                 padding: 20px;
@@ -104,6 +62,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    gap: 2px;
 
                     .name {
                         font-size: 12px;
@@ -203,6 +162,7 @@
                 border-radius: 20px;
                 overflow: hidden;
                 border: 1px solid #c5c2c2;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
                 img {
                     height: auto;
@@ -250,6 +210,7 @@
                 gap: 10px;
                 padding: 5px 10px;
                 border: 1px solid #c5c2c2;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
                 border-radius: 20px;
 
                 p {
@@ -280,6 +241,7 @@
                 padding: 2px;
                 border-radius: 20px;
                 border: 1px solid #c5c2c2;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
                 img {
                     height: auto;
@@ -307,8 +269,9 @@
             flex-direction: column;
             text-align: center;
             gap: 10px;
-            background-color: var(--secondary-color);
-            color: var(--dm-text-color);
+            border: 1px solid #c5c2c2;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
             border-radius: 20px;
 
             .top {
@@ -354,6 +317,7 @@
         align-items: center;
         gap: 10px;
         border: 1px solid #c5c2c2;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
         border-radius: 20px;
         padding: 15px 20px;
 
@@ -430,6 +394,7 @@
                 align-items: center;
                 border: 1px solid #c5c2c2;
                 border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
                 padding: 20px;
 
                 .left {
@@ -444,6 +409,7 @@
                         width: 50px;
                         border: 1px solid #c5c2c2;
                         border-radius: 8px;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
                         padding: 2px;
                         overflow: hidden;
 
@@ -520,6 +486,7 @@
                 align-items: center;
                 border: 1px solid #c5c2c2;
                 border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
                 padding: 20px;
                 gap: 10px;
 
@@ -528,6 +495,7 @@
                     width: 50px;
                     border: 1px solid #c5c2c2;
                     border-radius: 8px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
                     padding: 2px;
                     overflow: hidden;
 
@@ -553,153 +521,14 @@
         }
     }
 
-    .toolBar {
-        height: 70px;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: var(--bg-color);
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.08);
-        z-index: 1;
-
-        .tab {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-
-            p {
-                font-size: 10px;
-            }
-        }
-
-        .centerTab {
-            height: 40px;
-            width: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--bootstrap-bg-color);
-            border-radius: 8px;
-            color: var(--dm-text-color);
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-
-            svg {
-                transform: rotate(45deg);
-            }
-
-            p {
-                font-size: 12px;
-            }
-        }
-    }
-
-    .sidebar {
-        .shadow {
-            position: fixed;
-            top: 0%;
-            left: 0%;
-            height: 100%;
-            width: 100%;
-            background-color: #e0ccf7a9;
-            z-index: 2;
-        }
-
-        .content {
-            position: fixed;
-            top: 0%;
-            left: 0%;
-            height: 96.5vh;
-            width: 75%;
-            margin: 15px;
-            padding: 20px;
-            background-color: var(--bootstrap-bg-color);
-            color: var(--dm-text-color);
-            border-radius: 20px;
-            z-index: 3;
-
-            .user {
-                height: 25%;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-
-                .left {
-                    height: 90px;
-                    width: 90px;
-                    padding: 4px;
-                    background-color: var(--dm-text-color);
-                    border-radius: 20px;
-
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        border-radius: 20px;
-                    }
-                }
-
-                .right {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-
-                    .bottom {
-                        p {
-                            font-size: 12px;
-                            line-height: 1.5;
-                            letter-spacing: 1px;
-                            font-weight: 300;
-                        }
-                    }
-                }
-            }
-
-            ul {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-
-                .item {
-                    list-style: none;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 15px;
-
-                    .left {
-                        display: flex;
-                        align-items: center;
-                        gap: 20px;
-                    }
-
-                    .right {
-                        display: flex;
-                        align-items: center;
-                    }
-                }
-
-                .active {
-                    background-color: #e0ccf744;
-                    border-radius: 20px;
-                }
-            }
-        }
-    }
-
     .dark {
         background-color: var(--dm-bg-color);
         color: var(--dm-text-color);
+
+        .tab {
+            color: var(--dm-text-color);
+        }
+
     }
 
 }
