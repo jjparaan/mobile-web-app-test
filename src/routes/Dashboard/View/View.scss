@@ -37,11 +37,11 @@
         .stack {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-between;
 
             .card {
-                flex: 0 0 47%;
-                max-width: 47%;
+                flex: 0 0 48%;
+                max-width: 48%;
                 height: 75px;
                 border: 1px solid #c5c2c2;
                 border-radius: 20px;

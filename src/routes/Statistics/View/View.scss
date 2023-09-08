@@ -72,11 +72,11 @@
         margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        justify-content: space-between;
 
         .card {
-            flex: 0 0 47%;
-            max-width: 47%;
+            flex: 0 0 48%;
+            max-width: 48%;
             height: 75px;
             display: flex;
             flex-direction: column;
@@ -171,10 +171,11 @@
                             text-align: right;
                             letter-spacing: 1px;
                             line-height: 1.5;
+
                             .bank {
                                 font-size: 12px;
                             }
-                            
+
                             .type {
                                 font-size: 14px;
                                 font-weight: 700;
@@ -209,7 +210,7 @@
                             .expiry {
                                 font-size: 12px;
                             }
-                            
+
                             .expiryDate {
                                 font-size: 14px;
                                 font-weight: 700;
@@ -220,11 +221,11 @@
                             text-align: right;
                             letter-spacing: 1px;
                             line-height: 1.5;
-                            
+
                             .class {
                                 font-size: 12px;
                             }
-                            
+
                             .name {
                                 font-size: 14px;
                                 font-weight: 700;
@@ -243,19 +244,22 @@
 
                         .expense {
                             font-size: 12px;
+                            font-weight: 300;
                         }
-                        
+
                         .expenseValue {
                             font-size: 14px;
-                            font-weight: 700;
+
 
                             .up {
                                 font-size: 12px;
+                                font-weight: 700;
                                 color: #00dfa3;
                             }
 
                             .down {
                                 font-size: 12px;
+                                font-weight: 700;
                                 color: #f73563;
                             }
                         }
@@ -265,11 +269,12 @@
                         text-align: right;
                         letter-spacing: 1px;
                         line-height: 1.5;
-                        
+
                         .limit {
                             font-size: 12px;
+                            font-weight: 300;
                         }
-                        
+
                         .limitValue {
                             font-size: 14px;
                             font-weight: 700;
@@ -282,10 +287,172 @@
 
     .payments {
         margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .heading {
+            h3 {
+                font-size: 14px;
+            }
+        }
+
+        .paymentContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .payment {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border: 1px solid #c5c2c2;
+                border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+                padding: 20px;
+
+                .imageContainer {
+                    height: 70px;
+                    width: 70px;
+                    border: 1px solid #c5c2c2;
+                    border-radius: 8px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+                    padding: 2px;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 8px;
+                    }
+                }
+
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    .top {
+                        .type {
+                            font-size: 12px;
+                            font-weight: 300;
+                        }
+
+                        .name {
+                            font-size: 16px;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    .value {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+
+                        .up {
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: #00dfa3;
+                        }
+
+                        .down {
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: #f73563;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .categories {
+        margin-top: 20px;
         margin-bottom: 80px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        .heading {
+            h3 {
+                font-size: 14px;
+            }
+        }
+
+        .categoriesContainer {
+            display: flex;
+            gap: 15px;
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .category {
+                flex: 0 0 20%;
+                max-width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                text-align: center;
+                
+                .top {
+                    height: 70px;
+                    width: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #c5c2c2;
+                    border-radius: 20px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+                    .icon {
+                        height: 95%;
+                        width: 95%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #c5c2c2;
+                        border-radius: 20px;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+                    }
+                }
+
+                .bottom {
+                    .value {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+
+                        .change {
+                            font-size: 12px;
+                        }
+
+                        .up {
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: #00dfa3;
+                        }
+
+                        .down {
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: #f73563;
+                        }
+                    }
+
+                    .name {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 
 

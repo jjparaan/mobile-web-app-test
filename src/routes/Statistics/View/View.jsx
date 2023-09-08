@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux'
 import './View.scss'
 import Credits from './components/Credits'
 import Payments from './components/Payments'
+import Categories from './components/Categories'
 
 const View = () => {
   const darkModeValue = useSelector((state) => state.darkMode.value)
@@ -21,7 +22,7 @@ const View = () => {
       <Stats />
       <Credits />
       <Payments />
-
+      <Categories />
       
       <GlobalToolbar darkModeValue={darkModeValue}/>
       {hamburgerValue && <GlobalSidebar classValue={classValue}/>}
